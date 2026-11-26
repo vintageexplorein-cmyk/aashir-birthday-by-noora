@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Aashir 💙</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg,#071b3a,#123d70,#477caf);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #d8edff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #8dcaff;
+}
+
+h2 {
+  color: #b8ddff;
+  margin-bottom: 22px;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+button {
+  background: #b5dcff;
+  color: #08264b;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.card {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 22px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 25px auto;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+}
+
+.photo {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  margin: 15px;
+  border: 3px solid #c4e4ff;
+  box-shadow: 0 0 20px #80bfff;
+}
+
+video {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 18px;
+  margin-top: 20px;
+}
+
+.letter {
+  display: none;
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  animation: float 7s linear infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  padding: 35px;
+  color: #c5e4ff;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+  <h1>Happy Birthday Aashir! 💙</h1>
+  <p>To my favourite person, my happiness and my special one...</p>
+  <p>Today is all about YOU! 🥹❤️</p>
+  <button onclick="document.getElementById('surprise').scrollIntoView({behavior:'smooth'})">
+    Open Your Surprise 🎁
+  </button>
+</section>
+
+<section id="surprise">
+  <div class="card">
+    <h2>My Favourite Boy 💙</h2>
+    <img src="aashir.jpg" class="photo" alt="Aashir">
+    <p>One smile of yours can make my entire day beautiful. 🥰</p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Our Little World 🫶</h2>
+    <img src="our-photo.jpg" class="photo" alt="Our memories">
+    <p>My favourite memories are the ones that have YOU in them. ❤️</p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>A Little Birthday Letter 💌</h2>
+    <p>
+      Enkk ninnod oru laksham kodi trillion billion
+      sneham aanu! 😂❤️ Nee ente special person aanu.
+      Ethra vazhakk undayalum ninne njan orikkalum
+      marakkilla. Happy Birthday, ente Aashir! 🥹
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>One More Thing... 💗</h2>
+    <button onclick="showLetter()">Open My Heart 💌</button>
+
+    <div class="letter" id="letter">
+      <p>
+        Dear Aashir,<br><br>
+        Ente jeevithathil nee vannathinu shesham
+        orupad karyangal maari. Ninne kurichulla
+        ormakal enikku ennum oru special happiness aanu.
+        Ninte chiri, ninte samsaram, nammal orumichu
+        chilavazhicha nimishangal... ellam enikku
+        valare ishtam aanu. 🥹❤️<br><br>
+
+        Ethra naal kazhinjalum ee ormakal onnum
+        marakkan enikku pattilla. Ninte koode iniyum
+        orupad beautiful memories undakkanam ennanu
+        ente aagraham.<br><br>
+
+        Happy Birthday, my favourite human!
+        Stay happy, keep smiling. I love you so much! ❤️
+      </p>
+      <h2 style="margin-top:25px;">Forever Special 💙</h2>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Our Video Memories 🎥</h2>
+    <video controls playsinline>
+      <source src="our-video.mp4" type="video/mp4">
+      Your browser does not support this video.
+    </video>
+    <p>Every little moment with you is precious. ❤️</p>
+  </div>
+</section>
+
+<section>
+  <h1>Once Again, Happy Birthday! 🎂</h1>
+  <p>May all your dreams come true, Aashir. 💙</p>
+  <p>With lots of love, always... 🥹</p>
+</section>
+
+<footer>
+  Made with 💙 specially for Aashir
+  <p>— Your Noora ❤️</p>
+</footer>
+
+<script>
+function showLetter() {
+  document.getElementById("letter").style.display = "block";
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "💙";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (15 + Math.random()*20) + "px";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 7000);
+}
+
+setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
